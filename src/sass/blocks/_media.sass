@@ -3,9 +3,12 @@
 		max-width: 860px
 
 @media (max-width: 768px)
-
 	.container
 		max-width: 720px
+	.header
+		justify-content: space-around
+		&__official
+			display: none
 	.promo
 		&__header
 			font-size: 40px
@@ -19,19 +22,22 @@
 			width: 295px
 			height: 49px
 			font-size: 16px
-
-@media (max-width: 618px)
-	.header__official
-		display: none
+	.skills
+		padding: 40px 0 80px 0
+		&__wrapper
+			margin-top: 60px
+		&__block
+			max-width: 200px
+		&__text
+			margin-top: 20px
+			font-size: 13px
 
 @media (max-width: 576px)
 	.container
 		max-width: 530px
 	.header
 		&__logo
-			width: 230px
-		&__official
-			display: none
+			width: 150px
 	.promo
 		padding: 19px 0 65px 0
 		&__wrapper
@@ -42,7 +48,7 @@
 			font-size: 18px
 		&__icons
 			margin-top: 50px
-			width: 480px
+			width: 300px
 		&__link
 			font-size: 15px
 			font-weight: 500
@@ -52,22 +58,32 @@
 		width: 242px
 		height: 46px
 		font-size: 15px
+	.skills
+		padding: 30px 0 60px 0
+		&__wrapper
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-top: 40px
+		&__block
+			max-width: 300px
+			margin-top: 20px
+			margin-bottom: 20px
+
 @media (max-width: 320px)
 	.container
 		max-width: 90%
-.promo
-	padding: 16px 0 45px 0
-	&__wrapper
-		text-align: center
-
-.header
-	display: flex
-	flex-direction: column
-	&__contacts
-		margin-top: 20px
-		text-align: center
-	&__phone
-		margin-bottom: 10px
-
-.promo__icons
-	display: none
+	.promo
+		padding: 16px 0 45px 0
+		&__wrapper
+			text-align: center
+	.header
+		display: flex
+		flex-direction: column
+		&__contacts
+			margin-top: 20px
+			text-align: center
+		&__phone
+			margin-bottom: 10px
+	.promo__icons
+		display: none
