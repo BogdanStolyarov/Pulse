@@ -45,6 +45,8 @@
 	margin-bottom: 30px
 
 @media (max-width: 576px)
+	.carousel
+		display: none
 	.container
 		max-width: 530px
 	.header
@@ -84,6 +86,23 @@
 			margin-bottom: 20px
 	.title_left
 		font-size: 30px
+.carousel
+	padding: 40px 0
+.catalog
+	padding-bottom: 50px
+	&__tab
+		width: 150px
+		height: 44px
+		text-align: center
+		line-height: 44px
+		&__title
+			font-size: 14px
+	&__tabs
+		margin-top: 50px
+	&__content
+		justify-content: space-around
+	.catalog
+		padding-bottom: 50px
 
 @media (max-width: 320px)
 	.container
@@ -112,3 +131,7 @@
 			font-size: 18px
 	.title_left
 		font-size: 25px
+	.catalog
+		padding-bottom: 50px
+		&__content
+			justify-content: center
