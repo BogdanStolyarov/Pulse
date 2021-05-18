@@ -1,137 +1,230 @@
-@media (max-width: 991px)
-	.container
-		max-width: 860px
-
 @media (max-width: 768px)
 	.container
-		max-width: 720px
+		max-width: 750px
 	.header
 		justify-content: space-around
 		&__official
 			display: none
 	.promo
+		padding: 19px 0 70px 0
 		&__header
-			font-size: 40px
+			font-size: 38px
+			line-height: 39px
+			margin-bottom: 7px
 		&__subheader
-			font-size: 23px
+			margin-top: 15px
+			font-size: 22px
+			line-height: 21px
 		&__icons
-			margin-top: 60px
-	.button
-		&_main
-			margin-top: 65px
-			width: 295px
-			height: 49px
-			font-size: 16px
+			width: 410px
+	.button_main
+		margin-top: 64px
+		width: 270px
+		height: 46px
+		font-size: 16px
 	.skills
-		padding: 40px 0 80px 0
+		padding: 50px 0 90px 0
 		&__wrapper
 			margin-top: 60px
 		&__block
-			max-width: 200px
+			max-width: 230px
+		&__title
+			margin-top: 36px
+			font-size: 17px
+		&__text
+			margin-top: 24px
+			font-size: 14px
+	.title
+		font-size: 29px
+	.consultation
+		padding: 85px 0 84px 0
+		&__descr
+			font-size: 19px
+	.feed-form
+		margin-top: 34px
+		display: flex
+		flex-direction: column
+		width: 285px
+		input
+			height: 47px
+			margin-bottom: 14px
+			padding: 0 20px
+			font-size: 13px
+	.carousel
+		padding: 65px 0
+	.catalog
+		padding-bottom: 85px
+		&__content
+			margin-top: 55px
+			justify-content: space-around
+			&_active
+				margin-top: 55px
+				justify-content: space-around
+			&__tabs
+				margin-top: 63px
+			&__tab
+				width: 205px
+				height: 47px
+				line-height: 44px
+				font-size: 16px
+	.feed
+		padding-bottom: 60px
+		&__item
+			margin-top: 60px
+		&__text
+			margin-left: 56px
+			padding-right: 54px
+	.footer
+		&__block
+			width: 440px
+			height: 250px
+			padding: 46px 62px 56px 62px
+		&__address
+			margin-bottom: 34px
+			font-size: 18px
+		&__link
+			width: 48px
+			height: 48px
+			img
+				font-size: 25px
+
+@media (max-width: 576px)
+	.container
+		max-width: 560px
+	.header__logo
+		width: 225px
+	.promo
+		padding: 17px 0 60px 0
+		&__wrapper
+			align-items: center
+			margin-top: 78px
+	.button_main
+		margin-top: 62px
+		width: 265px
+		height: 45px
+		font-size: 15px
+	.skills
+		min-height: 450px
+		padding: 50px 0 70px 0
+		&__block
+			max-width: 180px
+		&__title
+			margin-top: 34px
+			font-size: 16px
 		&__text
 			margin-top: 20px
 			font-size: 13px
-	.title_left
-		text-align: center
-		font-size: 34px
-		margin-bottom: 7px
+	.consultation
+		min-height: 610px
+		&__descr
+			font-size: 18px
+			margin-top: 15px
 	.feed-form
-		margin: 0 auto
-		margin-top: 40px
-.consultation
-	&__descr
-		text-align: center
-.title_left
-	margin-bottom: 30px
-
-@media (max-width: 576px)
+		width: 280px
+		input
+			height: 46px
+			margin-bottom: 12px
+			font-size: 12px
 	.carousel
 		display: none
-	.container
-		max-width: 530px
-	.header
-		&__logo
-			width: 150px
-	.promo
-		padding: 19px 0 65px 0
-		&__wrapper
-			align-items: center
-		&__header
-			text-align: center
-			font-size: 35px
-		&__subheader
-			font-size: 18px
-		&__icons
-			margin-top: 50px
-			width: 300px
-		&__link
-			font-size: 15px
-			font-weight: 500
-			margin-top: 22px
-	.button_main
-		margin-top: 60px
-		width: 242px
-		height: 46px
-		font-size: 15px
-	.skills
-		padding: 30px 0 60px 0
-		&__wrapper
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-top: 40px
-		&__block
-			max-width: 300px
-			margin-top: 20px
-			margin-bottom: 20px
-	.title_left
-		font-size: 30px
-.carousel
-	padding: 40px 0
-.catalog
-	padding-bottom: 50px
-	&__tab
-		width: 150px
-		height: 44px
-		text-align: center
-		line-height: 44px
-		&__title
-			font-size: 14px
-	&__tabs
-		margin-top: 50px
-	&__content
-		justify-content: space-around
+	.title
+		font-size: 28px
+		margin: 0
 	.catalog
-		padding-bottom: 50px
+		padding-bottom: 60px
+		padding-top: 60px
+		&__tabs
+			margin-top: 50px
+		&__tab
+			width: 160px
+			height: 45px
+			text-align: center
+			line-height: 42px
+			font-size: 14px
+	.feed
+		&__item
+			flex-direction: column
+		&__text
+			margin-top: 15px
+			text-align: center
+	.footer
+		max-height: 580px
+		&__block
+			width: 420px
+			height: 230px
+			padding: 40px 52px 50px 52px
+
+	@media (max-width: 480px)
+		.container
+			max-width: 455px
+		.promo
+			min-height: 630px
+		.skills
+			min-height: 450px
+			padding: 40px 0 40px 0
+			&__wrapper
+				flex-direction: column
+				align-items: center
+			&__block
+				max-width: 230px
+			&__title
+				margin-top: 12px
+				font-size: 15px
+			&__text
+				margin-top: 6px
+				margin-bottom: 20px
+	.title_left
+		text-align: center
+		font-size: 22px
+	.consultation
+		min-height: 580px
+		padding: 75px 0 75px 0
+		&__descr
+			text-align: center
+	.feed-form
+		margin: 0 auto
+		margin-top: 30px
+		width: 260px
+	input
+		height: 44px
+		margin-bottom: 11px
 
 @media (max-width: 320px)
 	.container
-		max-width: 90%
-	.promo
-		padding: 16px 0 45px 0
-		&__wrapper
-			text-align: center
+		max-width: 300px
 	.header
-		display: flex
-		flex-direction: column
+		&__logo
+			width: 190px
 		&__contacts
-			margin-top: 20px
+			margin-top: 30px
+
+	.header
+		flex-direction: column
+
+	.promo
+		&__header
+			font-size: 35px
+			line-height: 39px
+			margin-bottom: 7px
+		&__subheader
 			text-align: center
-		&__phone
-			margin-bottom: 10px
+			line-height: 30px
+	.catalog
+		&__tab
+			width: 85px
+			height: 36px
+			line-height: 35px
+			font-size: 13px
+	.feed__descr
+		font-size: 13px
+	.feed__text
+		margin-left: 0
+		padding-right: 0
+
+	.footer__map
+		display: none
+	.footer__block
+		max-height: none
+
 	.promo__icons
 		display: none
-	.feed-form
-		width: 250px
-		input
-			height: 45px
-	.consultation
-		padding: 80px 0 72px 0
-		&__descr
-			font-size: 18px
-	.title_left
-		font-size: 25px
-	.catalog
-		padding-bottom: 50px
-		&__content
-			justify-content: center

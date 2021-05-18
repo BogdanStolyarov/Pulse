@@ -7,7 +7,6 @@ const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 
-
 gulp.task('server', function () {
 
 	browserSync({
@@ -38,8 +37,6 @@ gulp.task('styles', function () {
 
 gulp.task('watch', function () {
 	gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
-
-
-	gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
-
 });
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
