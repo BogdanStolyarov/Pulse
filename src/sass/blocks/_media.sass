@@ -76,17 +76,29 @@
 			padding-right: 54px
 	.footer
 		&__block
-			width: 440px
-			height: 250px
-			padding: 46px 62px 56px 62px
+			width: 420px
+			height: 240px
+			padding: 35px 40px 40px 40px
 		&__address
-			margin-bottom: 34px
-			font-size: 18px
+			margin-bottom: 26px
+			font-size: 16px
+		&__tel
+			margin-bottom: 28px
 		&__link
 			width: 48px
 			height: 48px
 			img
 				font-size: 25px
+
+	.overlay .modal
+		top: 55%
+		width: 360px
+		min-height: 370px
+		padding: 25px 25px 25px 25px
+
+		.overlay .modal__subtitle
+			color: #0d0d0d
+			font-size: 16px
 
 @media (max-width: 576px)
 	.container
@@ -148,7 +160,7 @@
 			margin-top: 15px
 			text-align: center
 	.footer
-		max-height: 580px
+		max-height: 550px
 		&__block
 			width: 420px
 			height: 230px
@@ -189,6 +201,30 @@
 		height: 44px
 		margin-bottom: 11px
 
+	.overlay .modal
+		top: 53%
+		width: 340px
+		min-height: 340px
+		padding: 15px 15px 15px 15px
+
+	.overlay .modal__close
+		right: -27px
+
+@media (max-width: 440px)
+	.container
+		max-width: 100%
+	.header__logo
+		width: 180px
+
+	.promo__icons
+		max-width: 350px
+	.catalog__tab
+		width: 120px
+		height: 42px
+		line-height: 39px
+	.footer__block
+		max-width: 100%
+
 @media (max-width: 320px)
 	.container
 		max-width: 300px
@@ -221,10 +257,41 @@
 		margin-left: 0
 		padding-right: 0
 
-	.footer__map
-		display: none
-	.footer__block
-		max-height: none
+	.footer
+		&__map
+			display: none
+		&__block
+			width: 318px
+			height: 230px
+			padding: 25px 15px 20px 15px
+		&__address
+			margin-bottom: 18px
+			font-size: 16px
+		&__tel
+			margin-bottom: 57px
 
 	.promo__icons
 		display: none
+
+	.overlay .modal
+		top: 51%
+		width: 250px
+		min-height: 260px
+		padding: 5px 5px 5px 5px
+
+	.overlay .modal__subtitle
+		font-size: 16px
+
+	.overlay .modal__descr
+		color: #0d0d0d
+		font-size: 13px
+
+	.overlay .feed-form input
+		height: 46px
+		margin-bottom: 8px
+		font-size: 12px
+
+	.overlay .feed-form
+		margin: 0 auto
+		margin-top: 20px
+		width: 230px

@@ -1,47 +1,19 @@
 $(document).ready(function () {
-	$('.carousel__inner').slick({
-		speed: 1200,
+	$('.slider').slick({
 		adaptiveHeight: true,
-		prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+		slidesToShow: 1,
+		dots: false,
+		arrows: false,
+		centerMode: true,
 		responsive: [{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 1,
-					dots: false,
-					arrows: false
-				}
-			},
-			{
 				breakpoint: 768,
 				settings: {
-					arrows: false,
-					centerMode: true,
 					slidesToShow: 1
 				}
 			},
 			{
-				breakpoint: 576,
+				breakpoint: 550,
 				settings: {
-					arrows: false,
-					centerMode: true,
-					slidesToShow: 1
-				}
-			},
-
-			{
-				breakpoint: 480,
-				settings: {
-					arrows: false,
-					centerMode: true,
-					slidesToShow: 1
-				}
-			},
-			{
-				breakpoint: 320,
-				settings: {
-					arrows: false,
-					centerMode: true,
 					slidesToShow: 1
 				}
 			}
